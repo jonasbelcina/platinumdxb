@@ -1,0 +1,175 @@
+/*
+Theme Name: WOOW Child
+Description: Responsive WooCommerce Theme
+Version: 1.0.0
+Theme URI: http://sitesao.com/woow/
+Author: Sitesao
+Template: woow
+Author URI: http://sitesao.com/
+License: GNU General Public License version 3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags: two-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style
+*/
+
+/*
+Adding your own custom CSS rules.
+*/
+
+/* Header */
+.sticky-logo {
+    display: none;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+    .navbar-fixed-top .sticky-logo {
+        display: block;
+        max-height: 50px;
+    }
+
+.header-transparent.header-type-center .navbar-default .primary-navbar-collapse,
+.header-transparent .header-right>div {
+    border-top: 1px solid #e5e5e5 !important;
+}
+
+.primary-nav ul {
+
+}
+
+.primary-nav>.megamenu>.dropdown-menu>li {
+    padding: 0 15px;
+}
+
+.primary-nav>.megamenu>.dropdown-menu .megamenu-sidebar {
+	max-height: 250px;
+	overflow: hidden;
+	text-align: center;
+	padding: 0 15px;
+}
+
+    .primary-nav>.megamenu>.dropdown-menu .megamenu-sidebar img {
+    	max-height: 220px;
+    	width: auto;
+    }
+
+    /* Banner */
+    .product-cat-banner {
+        height: 70%;
+        position: relative;
+        top: 50%;
+        background-size: cover;
+        background-position: right bottom;
+        -webkit-transform: translateY(-45%);
+        -ms-transform: translateY(-45%);
+        -o-transform: translateY(-45%);
+        transform: translateY(-45%);
+    }
+
+/* Collection Page */
+.collection-header {
+    background-size: cover;
+    background-position: right top;
+}
+
+.collection-banner .vc_column-inner  {
+    padding-top: 0 !important;
+}
+
+/*ul.products:not(.masonry-products).columns-4 li.product {
+    max-width: 277px;
+    max-height: 350px;
+}*/
+
+/* Woocommerce Styles*/
+    /* Product Listing */
+    .woocommerce ul.products li.product.style-3 .product-container {
+        padding: 10px;
+        border: 1px solid transparent !important;
+    }
+
+    .woocommerce ul.products li.product.style-3 .product-container:hover {
+        border-color: #e5e5e5 !important;
+    }
+
+    .woocommerce ul.products li.product.style-3 .product_title {
+        padding-bottom: 10px;
+    }
+
+    .info-content-wrap {
+        position: relative;
+    }
+
+        .loop-action {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .loop-action a {
+            color: transparent;
+            position: relative;
+            display: block;
+            width: 33px;
+            height: 33px;
+            background: #e6e6e6;
+        }
+
+            .loop-action a:before {
+                content: '\55';
+                font-family: 'ElegantIcons';
+                -webkit-font-smoothing: antialiased;
+                color: #bca480;
+                position: absolute;
+                left: 8px;
+                top: 4px;
+                font-size: 17px;
+            }
+
+    .product-quickview-content .btn-align-center {
+        left: 0;
+        margin: 30px 0;
+        -webkit-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+    }
+    
+    .woocommerce div.product.style-1 div.summary .product-excerpt {
+        padding-bottom: 100px;
+    }
+
+    /* Woocommerce Sidebar */
+    li.current-cat > a {
+        color: #bca480 !important;
+    }
+
+@media (max-width: 991px) {
+    .heading-container.heading-resize {
+        height: 250px;
+    }
+        .heading-button.heading-container .heading-background .page-title {
+            margin-top: 0 !important;
+        }
+
+        .heading-container .heading-background .heading-wrap {
+            height: 250px;
+        }
+}
+
+@media (max-width: 767px) {
+    .woocommerce ul.products {
+        text-align: center;
+    }
+
+    .woocommerce ul.products:not(.masonry-products)>li.product,
+    .woocommerce ul.products:not(.masonry-products)>li.product:not(.product-category) {
+        width: 100%;
+        max-width: 277px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+
+
